@@ -1,0 +1,29 @@
+.navbar-container {
+    position: relative;
+}
+
+@media (max-width: 767px) {
+    .navbar-container .expanded {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto;
+        grid-template-areas:
+            "title"
+            "menu";
+    }
+
+    .navbar-container .visible {
+        display: block;
+    }
+
+    .navbar-container .hidden {
+        display: none;
+    }
+
+    .navbar-container .font-bold {
+        font-weight: bold;
+    }
+
+    .navbar-container .md:flex {
+        display: block;
+    }
+}
